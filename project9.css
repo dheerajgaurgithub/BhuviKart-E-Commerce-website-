@@ -1,0 +1,113 @@
+*{
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: border-box;
+}
+.logo{
+    height: 60px;
+    background-color:white ;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.clogo{
+    height: 50px;
+    width: 100px;
+}
+.image{
+    background-image: url("amazon.webp");
+    background-size: cover ;
+    height: 50px;
+    width: 100%;
+    
+}
+
+.sign{
+   margin-left: 400px;
+   margin-top: 20px;
+    width: 500px;
+    height: 370px;
+    border: 0.1px solid lightgray;
+    border-radius: 9px;
+}
+.middle{
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-right: 10px;
+    border-bottom: 0.1px solid lightgray;
+}
+.searchinput{
+    width: 420px;
+    height: 25px;
+
+}
+.searchinput:hover{
+    border: 2px solid #febd68
+}
+.continue{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: yellow;
+    color: #262621;
+    width: 427px;
+    height: 30px;
+    border: 0.5px solid rgb(0, 0, 0);
+    border-radius: 8px;
+}
+.continue h5{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 25px;
+}
+.continue:hover{
+    background-color: #f08c09;
+}
+.middle a{
+color: #007185;
+}
+.shop{
+    
+        margin-top: 20px;
+        margin-left: 30px;
+        margin-right: 10px;
+       
+}
+.shop a{
+    font-size: 12px;
+    color: #007185;
+}
+.new{
+    margin-left: 400px;
+    margin-top: 20px;
+     width: 500px;
+     height: 50px;
+    
+ }
+ .newone i{
+    color: lightgray;
+ }
+ .newone p{
+    color: #007185;
+    display: inline;
+ }
+ .CREATE{
+    margin-left: 550px;
+ }
+
+.cone:hover{
+    background-color: lightgray;
+}
+.panel{
+    margin-top: 20px;
+    border: 0.1px solid lightgray;
+    background-color:#c8dbd9;
+    height: 100px;
+    
+    text-align: center;
+    align-items: center;
+}
+.panel a{
+    color: #007185;
+}
