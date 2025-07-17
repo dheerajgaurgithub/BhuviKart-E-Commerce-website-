@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout - Amazon Clone</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/checkout.css" />
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">Amazon Clone</div>
+        <a href="index.html" style="color: white; text-decoration: none;">🏠 Home</a>
+        <div class="cart">🛒 Cart</div>
+    </header>
+
+    <!-- Main Checkout Section -->
+    <main class="checkout-main">
+        <h2>Checkout</h2>
+        <div id="checkout-summary" class="checkout-summary"></div>
+        <form id="checkout-form" class="checkout-form" onsubmit="submitOrder(event)">
+            <h3>Enter Your Details</h3>
+            <input type="text" placeholder="Full Name" required />
+            <input type="email" placeholder="Email Address" required />
+            <input type="text" placeholder="Shipping Address" required />
+            <button type="submit">Place Order</button>
+        </form>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Amazon Clone. Built with HTML, CSS, and JavaScript.</p>
+    </footer>
+
+    <script src="js/checkout.js"></script>
+</body>
+
+</html>

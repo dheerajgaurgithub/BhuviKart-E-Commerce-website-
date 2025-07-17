@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Amazon Clone</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- Header / Navbar -->
+  <header>
+  <div class="logo">Amazon Clone</div>
+
+  <nav class="nav-links">
+    <a href="index.html">🏠 Home</a>
+    <a href="cart.html">🛒 Cart</a>
+    <a href="login.html" class="login-link"> Login</a>
+  </nav>
+</header>
+
+
+  <!-- Category Filters -->
+  <nav class="categories">
+    <button onclick="fetchAllProducts()">All</button>
+    <button onclick="filterByCategory('electronics')">Electronics</button>
+    <button onclick="filterByCategory('jewelery')">Jewelry</button>
+    <button onclick="filterByCategory(`men's clothing`)">Men's Clothing</button>
+    <button onclick="filterByCategory(`women's clothing`)">Women's Clothing</button>
+  </nav>
+
+  <!-- Product Listing -->
+  <main>
+    <h2>Products</h2>
+    <div id="product-list-container" class="product-grid"></div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Amazon Clone. Built with HTML, CSS, and JS.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

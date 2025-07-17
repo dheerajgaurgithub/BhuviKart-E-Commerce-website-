@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Details - Amazon Clone</title>
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="nav-logo">amazon<span>.clone</span></div>
+        <div class="nav-search">
+            <input type="text" placeholder="Search products..." />
+            <button>Search</button>
+        </div>
+        <div class="nav-links">
+            <a href="login.html">Login</a>
+            <a href="cart.html">Cart <span id="cart-count">0</span></a>
+        </div>
+    </header>
+
+    <!-- Product Detail -->
+    <main class="product-detail">
+        <div class="product-image" id="product-image"></div>
+        <div class="product-info">
+            <h1 id="product-name">Product Name</h1>
+            <p class="price" id="product-price">$0.00</p>
+            <p id="product-desc">Product description will go here.</p>
+            <button onclick="addToCart()">Add to Cart</button>
+        </div>
+    </main>
+
+    <script src="js/product-details.js"></script>
+</body>
+
+</html>
