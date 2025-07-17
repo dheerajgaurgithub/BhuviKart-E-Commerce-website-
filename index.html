@@ -1,45 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Amazon Clone</title>
-  <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to Amazon Clone</title>
+    <link rel="stylesheet" href="css/landing.css" />
 </head>
+
 <body>
 
-  <!-- Header / Navbar -->
-  <header>
-  <div class="logo">Amazon Clone</div>
+    <div class="landing-container">
+        <div class="content">
+            <h1>🛒 Welcome to Amazon Clone</h1>
+            <p>This is a fully responsive e-commerce web project built using only <strong>HTML, CSS, and
+                    JavaScript</strong>.</p>
 
-  <nav class="nav-links">
-    <a href="index.html">🏠 Home</a>
-    <a href="cart.html">🛒 Cart</a>
-    <a href="login.html" class="login-link"> Login</a>
-  </nav>
-</header>
+            <div class="developer-info">
+                <p>Developed by <a href="https://dheerajgaurofficial.netlify.app/" target="_blank">Dheeraj Gaur</a></p>
+            </div>
 
+            <a href="index.html" class="btn-get-started">Get Started</a>
+        </div>
+    </div>
 
-  <!-- Category Filters -->
-  <nav class="categories">
-    <button onclick="fetchAllProducts()">All</button>
-    <button onclick="filterByCategory('electronics')">Electronics</button>
-    <button onclick="filterByCategory('jewelery')">Jewelry</button>
-    <button onclick="filterByCategory(`men's clothing`)">Men's Clothing</button>
-    <button onclick="filterByCategory(`women's clothing`)">Women's Clothing</button>
-  </nav>
-
-  <!-- Product Listing -->
-  <main>
-    <h2>Products</h2>
-    <div id="product-list-container" class="product-grid"></div>
-  </main>
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Amazon Clone. Built with HTML, CSS, and JS.</p>
-  </footer>
-
-  <script src="js/script.js"></script>
 </body>
+
 </html>
