@@ -14,6 +14,7 @@ import {
   Package,
   UserCircle
 } from 'lucide-react';
+import { useEffect, useState as useReactState } from 'react';
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -29,6 +30,21 @@ const Navbar: React.FC = () => {
   const location = useLocation();
   const { state: cartState } = useCart();
   const { user, isAuthenticated, logout } = useAuth();
+  const [profilePhoto, setProfilePhoto] = useReactState<string | null>(null);
+
+  useEffect(() => {
+    const stored = localStorage.getItem('bhuvikart-profile-extra');
+    if (stored) {
+      try {
+        const parsed = JSON.parse(stored);
+        setProfilePhoto(parsed.photo || null);
+      } catch {
+        setProfilePhoto(null);
+      }
+    } else {
+      setProfilePhoto(null);
+    }
+  }, [isAuthenticated]);
 
   const isActive = (path: string) => location.pathname === path;
 
@@ -105,7 +121,11 @@ const Navbar: React.FC = () => {
               <DropdownMenu>
                 <DropdownMenuTrigger asChild>
                   <Button variant="ghost" size="icon">
-                    <UserCircle className="h-5 w-5" />
+                    {profilePhoto ? (
+                      <img src={profilePhoto} alt="Profile" className="h-8 w-8 rounded-full object-cover border" />
+                    ) : (
+                      <UserCircle className="h-5 w-5" />
+                    )}
                   </Button>
                 </DropdownMenuTrigger>
                 <DropdownMenuContent align="end" className="w-48">

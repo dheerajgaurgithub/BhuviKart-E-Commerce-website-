@@ -14,6 +14,11 @@ import Cart from "./pages/Cart";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import NotFound from "./pages/NotFound";
+import TermsAndConditions from "./pages/TermsAndConditions";
+import MyOrders from "./pages/MyOrders";
+import Checkout from "./pages/Checkout";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import Profile from "./pages/Profile";
 
 const queryClient = new QueryClient();
 
@@ -34,6 +39,11 @@ const App = () => (
               <Route path="/cart" element={<Cart />} />
               <Route path="/login" element={<Login />} />
               <Route path="/signup" element={<Signup />} />
+              <Route path="/terms" element={<TermsAndConditions />} />
+              <Route path="/orders" element={<MyOrders />} />
+              <Route path="/checkout" element={<Checkout />} />
+              <Route path="/privacy" element={<PrivacyPolicy />} />
+              <Route path="/profile" element={<Profile />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </BrowserRouter>
