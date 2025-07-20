@@ -124,7 +124,7 @@ const Footer: React.FC = () => {
         <div className="mt-8 pt-8 border-t">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-sm text-muted-foreground">
-              © 2024 BhuviKart. All rights reserved. Developed by{' '}
+              © 2025 BhuviKart. All rights reserved. Developed by{' '}
               <Link 
                 to="https://dheerajgaurofficial.netlify.app/" 
                 target="_blank"
