@@ -37,7 +37,7 @@ const Footer: React.FC = () => {
                 <Github className="h-5 w-5" />
               </Link>
               <Link 
-                to="https://linkedin.com/in/dheerajgaur" 
+                to="https://www.linkedin.com/in/dheeraj-gaur-9b5410324/" 
                 target="_blank"
                 className="text-muted-foreground hover:text-primary transition-colors"
               >
