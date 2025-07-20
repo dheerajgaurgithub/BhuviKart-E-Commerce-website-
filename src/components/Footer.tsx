@@ -30,7 +30,7 @@ const Footer: React.FC = () => {
                 <Globe className="h-5 w-5" />
               </Link>
               <Link 
-                to="https://github.com/dheerajgaur" 
+                to="https://github.com/dheerajgaurgithub" 
                 target="_blank"
                 className="text-muted-foreground hover:text-primary transition-colors"
               >
@@ -110,11 +110,11 @@ const Footer: React.FC = () => {
               </div>
               <div className="flex items-center space-x-2 text-muted-foreground">
                 <Phone className="h-4 w-4" />
-                <span>+91 98765 43210</span>
+                <span>+91 6397684456</span>
               </div>
               <div className="flex items-center space-x-2 text-muted-foreground">
                 <MapPin className="h-4 w-4" />
-                <span>Mumbai, Maharashtra, India</span>
+                <span>Mathura, UttarPradesh, India</span>
               </div>
             </div>
           </div>
